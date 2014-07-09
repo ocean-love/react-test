@@ -59,6 +59,7 @@
   <ItemGroup>
     <Content Include="gulpfile.js" />
     <Content Include="index.html" />
+    <None Include="README.md" />
     <Content Include="Script\App\Actions\TodoActions.js" />
     <Content Include="Script\App\app.js" />
     <Content Include="Script\App\Components\Footer.react.js" />
