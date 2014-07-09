@@ -1,0 +1,35 @@
+{
+  "name": "reactdotnet-browserify",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "react": "~0.10",
+    "markdown": "~0.5.0",
+    "es6-promise": "~0.1.1"
+  },
+
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
+  },
+  "devDependencies": {
+    "gulp": "*",
+    
+    "gulp-react": "*",
+    "reactify": "^0.13.1",
+
+    "gulp-compass": "^1.1.9",
+    "gulp-minify-css": "*",
+    "gulp-rename": "*",
+
+    "browserify": "4.2.0",
+    
+    "gulp-watch": "~0.6.8",
+    "memory-streams": "0.0.3",
+    "vinyl-source-stream": "*",
+    "combined-stream": "0.0.5",
+    "gulp-concat": "~2.2.0",
+    "gulp-plumber": "~0.6.3"    
+  }
+}
