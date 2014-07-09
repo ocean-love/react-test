@@ -1,0 +1,27 @@
+@import "compass";
+@import "susy";
+
+
+
+@import "Components/button";
+
+
+
+
+html{
+	body{
+		font-family: "Times New Roman";
+		@include background-image(radial-gradient(45px 45px, dodgerblue 10px, white 30px));
+	}
+
+
+	nav {
+		@include container(4);
+		>span{
+  			@include span(1 of 4);
+  			&:last-child{ @include span(1 of 4 last) }
+		}
+	}
+
+	
+}

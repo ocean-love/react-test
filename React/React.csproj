@@ -59,6 +59,18 @@
   <ItemGroup>
     <Content Include="gulpfile.js" />
     <Content Include="index.html" />
+    <Content Include="Script\App\Actions\TodoActions.js" />
+    <Content Include="Script\App\app.js" />
+    <Content Include="Script\App\Components\Footer.react.js" />
+    <Content Include="Script\App\Components\Header.react.js" />
+    <Content Include="Script\App\Components\MainSection.react.js" />
+    <Content Include="Script\App\Components\TodoApp.react.js" />
+    <Content Include="Script\App\Components\TodoItem.react.js" />
+    <Content Include="Script\App\Components\TodoTextInput.react.js" />
+    <Content Include="Script\App\Constants\TodoConstants.js" />
+    <Content Include="Script\App\Dispatcher\AppDispatcher.js" />
+    <Content Include="Script\App\Dispatcher\Dispatcher.js" />
+    <Content Include="Script\App\Stores\TodoStore.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -67,12 +79,18 @@
   <ItemGroup>
     <Content Include="config.rb" />
     <Content Include="package.json" />
+    <Content Include="Content\SASS\Components\button.scss" />
+    <Content Include="Content\SASS\main.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\CSS\" />
+    <Folder Include="Script\Build\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
