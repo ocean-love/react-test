@@ -4,12 +4,12 @@ Sandbox project... Using react framework building with gulp and browserify. Resp
 ## Dependencies for building
 
 ### Core Build Functionality
-* [npm](http://nodejs.org/).
-* [git](http://git-scm.com/downloads)
-* gulp (npm install -g gulp)
+* [npm] download here(http://nodejs.org/).
+* [git] download here(http://git-scm.com/downloads)
+* gulp run `npm install -g gulp`
 
 ### CSS using SASS
-* ruby, [windows](http://rubyinstaller.org/) [Others](https://www.ruby-lang.org/en/downloads/)
-* compass (gem install compass --pre)
-* susy (gem install susy)
+* ruby, get it trough [Windows installer](http://rubyinstaller.org/) or [download page](https://www.ruby-lang.org/en/downloads/)
+* compass run `gem install compass --pre`
+* susy run `gem install susy`
 
