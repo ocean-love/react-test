@@ -9,7 +9,6 @@ var react = require('gulp-react');
 
 var browserify = require('browserify');
 
-
 var source = require('vinyl-source-stream');
 var CombinedStream = require('combined-stream');
 var watch = require('gulp-watch');
