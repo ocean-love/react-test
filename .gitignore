@@ -23,6 +23,7 @@ build/
 [Bb]uild[Ll]og.*
 
 *.csproj
+*.config
 *_i.c
 *_p.c
 *.ilk

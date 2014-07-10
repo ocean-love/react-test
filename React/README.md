@@ -13,3 +13,7 @@ Sandbox project... Using react framework building with gulp and browserify. Resp
 * **compass** run `gem install compass --pre`
 * **susy** run `gem install susy`
 
+## Building
+`npm install`
+`gulp watch`
+
