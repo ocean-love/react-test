@@ -13,15 +13,24 @@ var source = require('vinyl-source-stream');
 var CombinedStream = require('combined-stream');
 var watch = require('gulp-watch');
 
+
+var errorHandler = function (msg) {
+    return function (error) {
+        console.error(msg);
+        console.error(error.stack);
+    };
+};
+
 var buildReact = function(b){ 
-  b.add('./Script/App/app.js');
+    b.add('./Script/App/app.js');
 
   /// Translate react syntax to proper JS
-  b.transform(reactify)  
+  b.transform(reactify);
 
   /// Write to file
-  return b.bundle()
-    .pipe(source('bundle.js'))
+  b.bundle()
+      .on("error", errorHandler("JavaScript Build failed"))
+      .pipe(source('bundle.js'))        
     .pipe(gulp.dest('Script/Build'));
 }
 
@@ -67,4 +76,4 @@ gulp.task('watch', function () {
   });
 });
 
-gulp.task('default', ['react']);
+gulp.task('default', ['watch']);
