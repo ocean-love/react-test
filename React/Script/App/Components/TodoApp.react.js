@@ -7,6 +7,7 @@
 
 var Footer = require('./Footer.react');
 var Header = require('./Header.react');
+var AnimatedMenu = require('./AnimatedMenu.react');
 var MainSection = require('./MainSection.react');
 var React = require('react');
 var TodoStore = require('../stores/TodoStore');
@@ -41,11 +42,11 @@ var TodoApp = React.createClass({
   render: function() {
   	return (
       <div>
+        <AnimatedMenu items={ ['Home', 'Services', 'About', 'Contact us'] } />
         <Header />
         <MainSection
           allTodos={this.state.allTodos}
-          areAllComplete={this.state.areAllComplete}
-        />
+          areAllComplete={this.state.areAllComplete}/>
         <Footer allTodos={this.state.allTodos} />
       </div>
   	);
